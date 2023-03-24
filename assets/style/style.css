@@ -1,0 +1,64 @@
+#update {
+  display: none;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+table tr:hover {
+  background-color: #f2f2f2;
+}
+
+table th {
+  position: relative;
+  user-select: none;
+  background-color: #5a5a5a !important;
+  color: white;
+  transition: all linear 0.16s;
+}
+
+table th[data-sort] {
+  cursor: pointer;
+}
+
+table td {
+  text-align: center;
+}
+
+table th[data-sort]:before,
+table th[data-sort]:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  right: 10%;
+  opacity: 0.3;
+  border: 4px solid transparent;
+}
+
+table th[data-sort]:before {
+  top: 10px;
+  border-bottom-color: white;
+}
+table th[data-sort]:after {
+  top: 20px;
+  border-top-color: white;
+}
+
+table th.asc:before,
+table th.desc:after {
+  opacity: 1;
+}
