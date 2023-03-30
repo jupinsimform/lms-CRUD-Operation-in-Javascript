@@ -17,6 +17,13 @@
   pointer-events: none;
   color: #aaa;
 }
+.main-heading {
+  background-color: #06283d;
+  color: white;
+}
+.main-form {
+  background-color: #f6f1f1;
+}
 
 table tr:hover {
   background-color: #f2f2f2;
@@ -25,7 +32,7 @@ table tr:hover {
 table th {
   position: relative;
   user-select: none;
-  background-color: #5a5a5a !important;
+  background-color: #06283d !important;
   color: white;
   transition: all linear 0.16s;
 }
@@ -61,4 +68,13 @@ table th[data-sort]:after {
 table th.asc:before,
 table th.desc:after {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  h2.main-heading {
+    font-size: medium;
+  }
+  html {
+    font-size: small;
+  }
 }
