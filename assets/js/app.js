@@ -23,7 +23,7 @@ function filterTask(e) {
   });
 }
 
-// validate inpu feild
+// validate input feild
 function validateForm() {
   var product_id = document.getElementById("product_id").value;
   var product_name = document.getElementById("product_name").value;
@@ -70,11 +70,11 @@ function showData() {
     table_data +=
       "<td> <button onclick='deleteData(" +
       index +
-      ")' class='btn btn-danger m-1'><i class='fa-regular fa-trash-can'></i></button> <button onclick='updateData(" +
+      ")' class='btn btn-outline-danger m-1'><i class='fa-regular fa-trash-can'></i></button> <button onclick='updateData(" +
       index +
-      ")' class='btn btn-warning m-1'><i class='fa-regular fa-pen-to-square'></i></button>  <button onclick='viewData(" +
+      ")' class='btn btn-outline-warning m-1'><i class='fa-regular fa-pen-to-square'></i></button>  <button onclick='viewData(" +
       index +
-      ")' class='btn btn-info m-1'><i class='fa-solid fa-eye'></button></td>";
+      ")' class='btn btn-outline-info m-1'><i class='fa-solid fa-eye'></button></td>";
     table_data += "</tr>";
   });
   document.querySelector("#crudtable tbody").innerHTML = table_data;
